@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Library App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="addbooks.html">Add Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="search.html">Search </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="delete.html">Delete Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="viewbooks.html">View Books</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>View Books</h1>
+  <div class="container">
+    <div class="row">
+      <div>
+        <col class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="row g-3">
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+              src="data:image/jpg;base64,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"
+
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Make Way for Ducklings</h5>
+                <p class="card-text">Author: Robert McCloskey</p>
+                <p class="card-text">Category:Fiction</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:1999</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+
+            <div class="card">
+              <img
+                src="https://books.google.co.in/books/publisher/content?id=BHadDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0jeRYO1USels1-AlT5QQifC7_n0Q&w=1280"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chasing Cassandra</h5>
+                <p class="card-text">Author:Lisa Kleypas</p>
+                <p class="card-text">Category:Historical romance</p>
+                <p class="card-text">Distributer:Little, Brown Book Group</p>
+                <p class="card-text">Published Year:2020</p>
+                <p class="card-text">Price:$35</p>
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
